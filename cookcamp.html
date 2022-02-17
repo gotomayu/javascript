@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CookCamp</title>
+    <link rel="icon" href="img-materials/favicon.ico">
+    <link rel="stylesheet" href="font/css/open-iconic.css">
+    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="css/modaal.min.css" />
+    <!--[?01]別ファイルとして再読み込みする-->
+    <link rel="stylesheet" href="css/cookcamp.css">
+</head>
+
+<body>
+    <header>
+        <figure>
+            <img src="img-materials/logo.png" alt="ロゴ画像">
+        </figure>
+    </header>
+    <content>
+        <section>
+            <div class="carousel">
+                <div><img src="img-materials/key_visual.jpg" alt="スライド料理画像1"></div>
+                <div><img src="img-materials/key_visual2.jpg" alt="スライド料理画像2"></div>
+                <div><img src="img-materials/key_visual3.jpg" alt="スライド料理画像3"></div>
+            </div>
+        </section>
+        <section>
+            <h2 class="content_title"><img src="img-materials/icon.png">新着レシピ</h2>
+            <div class="content_flex">
+                <figure><a href="#modal1" class="show1"><img src="img-materials/image01.jpg" alt="料理画像"><figcaption>季節の彩り前菜</figcaption></a></figure>
+                <figure><a href="#modal2" class="show2"><img src="img-materials/image02.jpg" alt="料理画像"><figcaption>簡単野菜スープ</figcaption></a></figure>
+                <figure><a href="#modal3" class="show3"><img src="img-materials/image03.jpg" alt="料理画像"><figcaption>ヘルシー米粉パン</figcaption></a></figure>
+                <figure><a href="#modal4" class="show4"><img src="img-materials/image04.jpg" alt="料理画像"><figcaption>ぷりぷりエビ料理</figcaption></a></figure>
+            </div>
+        </section>
+    </content>
+    
+    <!--以下モーダル内のhtml記述-->
+    <div id="modal1">
+        <figure><img src="img-materials/image08.jpg" alt="料理画像">
+            <figcaption>
+                様々な食材を使用し作り上げた色とりどりの前菜はテーブルをカラフルに彩ります♪
+            </figcaption>
+        </figure>
+        <div>
+            <button id="share1"><span class="oi" data-glyph="share-boxed"></span>シェア</button>
+        </div>
+    </div>
+    <div id="modal2">
+        <figure><img src="img-materials/image09.jpg" alt="料理画像">
+            <figcaption>
+                柔らかく蒸したあとはホイッパーで混ぜるだけの簡単レシピです♪かぼちゃは、ビタミンやミネラルが豊富なので美容や冷え性に良いですよ♪
+            </figcaption>
+        </figure>
+        <div>
+            <button id="share2"><span class="oi" data-glyph="share-boxed"></span>シェア</button>
+        </div>
+    </div>
+    <div id="modal3">
+        <figure><img src="img-materials/image10.jpg" alt="料理画像">
+            <figcaption>
+                米粉を使ったさっくりとした軽い食感のパンです♪米粉は日本の主食のお米で作られており、ヘルシーで口当たりもいいですよ♪
+            </figcaption>
+        </figure>
+        <div>
+            <button id="share3"><span class="oi" data-glyph="share-boxed"></span>シェア</button>
+        </div>
+    </div>
+    <div id="modal4">
+        <figure><img src="img-materials/image11.jpg" alt="料理画像">
+            <figcaption>
+                エビがサラダやスープ、ごはんなどに入っていると、テンションが上がりますよね♪ただ、エビは意外に調理が難しいという声も...。実はあるテクニックを使うだけでエビがプリップリに仕上がっちゃうんです♪
+            </figcaption>
+        </figure>
+        <div>
+            <button id="share4"><span class="oi" data-glyph="share-boxed"></span>シェア</button>
+        </div>
+    </div>
+    <footer>
+        <p><small>Copyright &copy; CodeCamp All Rights Reserved.</small></p>
+    </footer>
+
+    <!--以下カルーセル記述        -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    
+    <!--以下モーダル記述-->
+    <script src="js/modaal.min.js"></script>
+    <script src="js/cookcamp.js"></script>
+</body>
+
+</html>
